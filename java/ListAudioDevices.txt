@@ -1,0 +1,17 @@
+Salida en macOS en macbook sin nada conectado
+$ java ListAudioDevices
+-- : com.sun.media.sound.PortMixer$PortMixerPort@4cdbe50f
+-- : com.sun.media.sound.PortMixer$PortMixerPort@7cf10a6f
+-- : com.sun.media.sound.DirectAudioDevice$DirectTDL@6537cf78
+-- : com.sun.media.sound.DirectAudioDevice$DirectTDL@67b6d4ae
+-- : com.sun.media.sound.DirectAudioDevice$DirectTDL@34b7bfc0
+
+Salida en macOS en macbook con zoom h2n conectada
+$ java ListAudioDevices
+-- : com.sun.media.sound.PortMixer$PortMixerPort@4cdbe50f
+-- : com.sun.media.sound.PortMixer$PortMixerPort@66d33a
+-- : com.sun.media.sound.PortMixer$PortMixerPort@7e0babb1
+-- : com.sun.media.sound.DirectAudioDevice$DirectTDL@67b6d4ae
+-- : com.sun.media.sound.DirectAudioDevice$DirectTDL@34b7bfc0
+-- : com.sun.media.sound.DirectAudioDevice$DirectTDL@366e2eef
+-- : com.sun.media.sound.DirectAudioDevice$DirectTDL@6df97b55
