@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="">
+<script>
+if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+  console.log("Parece correcto esto...")
+	navigator.mediaDevices.getUserMedia({audio: true});
+}
+audioContext = new AudioContext();
+var processor = audioContext.createScriptProcessor(512)
+document.addEventListener("click", printData);
+function printData(event) {
+	var buf = audioContext.inputBuffer.getChannelData(0);
+	console.log(buf)
+}
+</script>
+</html>

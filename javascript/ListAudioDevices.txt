@@ -1,0 +1,10 @@
+Salida en Firefox en macbook sin nada conectado
+videoinput:  id = K7D1AmvrWR2WZrC7h0QwW6ZxuUr0mleANzbmGETjFX4= ListAudioDevices.html:11:13
+audioinput:  id = mMIOrigooR4ntH+uBGm0suLMBu7e1SsNETAm7xax9gk= ListAudioDevices.html:11:13
+audioinput:  id = /1ILEGRDf5IUZ2DlOEjRVFh9R7H0iq1Lsky+biuyTeI= ListAudioDevices.html:11:13
+
+Salida en Firefox en macbook con zoom h2n conectado
+videoinput:  id = K7D1AmvrWR2WZrC7h0QwW6ZxuUr0mleANzbmGETjFX4= ListAudioDevices.html:7:13
+audioinput:  id = mMIOrigooR4ntH+uBGm0suLMBu7e1SsNETAm7xax9gk= ListAudioDevices.html:7:13
+audioinput:  id = /1ILEGRDf5IUZ2DlOEjRVFh9R7H0iq1Lsky+biuyTeI= ListAudioDevices.html:7:13
+audioinput:  id = 7Cbs/E8wpo/DdyPoMrdWi0S2FWPHbEoRM2IE2/HIh64= ListAudioDevices.html:7:13
