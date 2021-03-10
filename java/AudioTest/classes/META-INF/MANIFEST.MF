@@ -1,10 +1,10 @@
 Manifest-Version: 1.0.0
-Main-Class: CryptoEX
+Main-Class: AudioTest
 Created-By: Rodrigo Valla
-Name: CryptoEX
-Specification-Title: CryptoEX
-Specification-Version: 1.0.0
+Name: AudioTest
+Specification-Title: AudioTest
+Specification-Version: 0.0.5
 Specification-Vendor: Rodrigo Valla
-Implementation-Title: CryptoEX
-Implementation-Version: 1.0.0
+Implementation-Title: AudioTest
+Implementation-Version: 0.0.5
 Implementation-Vendor: Rodrigo Valla
