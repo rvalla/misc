@@ -17,14 +17,15 @@ import java.util.ArrayList;
 public class AudioControl {
 
   private static final int BUFFER_SIZE = 2048 * 8;
-	//private final byte[] buffers[] = new byte[BUFFER_SIZE][4];
-	private final byte[] buffer = new byte[BUFFER_SIZE];
+	private final byte[] buffers[] = new byte[4][BUFFER_SIZE];
+	//private final byte[] buffer = new byte[BUFFER_SIZE];
 
 	private static Mixer.Info[] mixerInfo = AudioSystem.getMixerInfo();
 	private ArrayList<Integer> mixerLocations = new ArrayList<Integer>(20);
 	private ArrayList<String> mixersNames = new ArrayList<String>(20);
 
-	private int nTest = 2;
+	private Boolean playing = false;
+	private int nTest = 4;
 	private AudioFormat af;
 	private File files[] = new File[nTest];
 	private AudioInputStream streams[] = new AudioInputStream[nTest];
@@ -65,45 +66,53 @@ public class AudioControl {
 	}
 
 	public String[] getLines() {
-		String result[] = new String[8];
+		String result[] = new String[2];
 		for (int i = 0; i < result.length; i++) {
 			result[i] = String.valueOf(i + 1);
 		}
 		return result;
 	}
 
-	public void triggerPlay(int tMixer[], int tChannels[]){
-		System.out.println("-- Listos para reproducir...");
+	public void setConfig(int tMixer[], int tLines[]){
 		Mixer mixers[] = new Mixer[nTest];
 		for (int i = 0; i < nTest; i++) {
 			try {
 				mixers[i] = AudioSystem.getMixer(mixerInfo[mixerLocations.get(tMixer[i])]);
-				Line.Info[] lInfo = mixers[i].getSourceLineInfo();
-				lines[i] = (SourceDataLine) mixers[i].getLine(lInfo[tMixer[i]]);
+				Line.Info lInfo = mixers[i].getSourceLineInfo()[tLines[i]];
+				lines[i] = (SourceDataLine) mixers[i].getLine(lInfo);
 				lines[i].open(af, BUFFER_SIZE);
 				lines[i].start();
-			} catch (LineUnavailableException ele) {
+				System.out.println("-- Línea configurada...");
+			} catch (LineUnavailableException lue) {
 				System.out.println("Ups, the line...");
-				throw new RuntimeException(ele);
+				throw new RuntimeException(lue);
 			} catch (Exception e) {
 				System.out.println("Ups, unknown...");
 				throw new RuntimeException(e);
 			}
 		}
-		play();
 	}
 
-	private void play(){
+	public void play(){
+		playing = true;
 		try {
-			while (streams[0].read(buffer) != -1) {
+			while (playing) {
 				for (int m = 0; m < nTest; m++) {
-					lines[m].write(buffer, 0, buffer.length);
+					streams[m].read(buffers[m]);
+					System.out.println(buffers[m]);
+					//lines[m].write(buffers[m], 0, BUFFER_SIZE);
 				}
 			}
 		} catch (Exception e) {
 			System.out.println("Ups, the play...");
+			System.out.println(e.toString());
+			playing = false;
 			throw new RuntimeException(e);
 		}
+	}
+
+	public void stop(){
+		playing = false;
 	}
 
 }
