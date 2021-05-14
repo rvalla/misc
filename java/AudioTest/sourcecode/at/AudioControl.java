@@ -12,30 +12,31 @@ import javax.sound.sampled.TargetDataLine;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.ArrayList;
 
 public class AudioControl {
 
-  private static final int BUFFER_SIZE = 2048 * 8;
-	//private final byte[] buffers[] = new byte[4][BUFFER_SIZE];
+	private static final int BUFFER_SIZE = 2048 * 8;
+	// private final byte[] buffers[] = new byte[4][BUFFER_SIZE];
 	private final byte[] buffer = new byte[BUFFER_SIZE];
 
 	private static Mixer.Info[] mixerInfo = AudioSystem.getMixerInfo();
 	private ArrayList<Integer> mixerLocations = new ArrayList<Integer>(20);
 	private ArrayList<String> mixersNames = new ArrayList<String>(20);
 
-	private Boolean playing = false;
-	private int nTest = 4; //Este número define cuántos archivos, líneas carga. (1-4)
+	// private Boolean playing = false;
+	private int nTest = 4; // Este número define cuántos archivos, líneas carga. (1-4)
 	private AudioFormat af;
 	private File files[] = new File[nTest];
-	private AudioInputStream streams[] = new AudioInputStream[nTest]; //Acá voy a cargar los archivos...
+	private AudioInputStream streams[] = new AudioInputStream[nTest]; // Acá voy a cargar los archivos...
 	private SourceDataLine lines[] = new SourceDataLine[nTest];
 
 	public AudioControl() {
 		System.out.println("-- AudioControl: Some tests to play multichannel audio...");
 		for (int i = 0; i < nTest; i++) {
 			try {
-				String filename = "audio/ch_" + String.valueOf(i+1) + ".wav";
+				String filename = "audio/ch_" + String.valueOf(i + 1) + ".wav";
 				URL aux = getClass().getResource(filename);
 				files[i] = new File(aux.toURI());
 				streams[i] = AudioSystem.getAudioInputStream(files[i]);
@@ -48,7 +49,7 @@ public class AudioControl {
 		for (int i = 0; i < mixerInfo.length; i++) {
 			Mixer mixer = AudioSystem.getMixer(mixerInfo[i]);
 			for (Line.Info l : mixer.getSourceLineInfo()) {
-				if (l.toString().startsWith("interface SourceDataLine")){
+				if (l.toString().startsWith("interface SourceDataLine")) {
 					System.out.println("-- Adding a mixer...");
 					mixerLocations.add(i);
 					mixersNames.add(mixerInfo[i].getName());
@@ -73,8 +74,8 @@ public class AudioControl {
 		return result;
 	}
 
-	//Acá se supone que se abren y configuran la líneas...
-	public void setConfig(int channels, int tMixer[], int tLines[]){
+	// Acá se supone que se abren y configuran la líneas...
+	public void setConfig(int channels, int tMixer[], int tLines[]) {
 		Mixer mixers[] = new Mixer[channels];
 		nTest = channels;
 		for (int i = 0; i < channels; i++) {
@@ -95,27 +96,31 @@ public class AudioControl {
 		}
 	}
 
-	//Acá intento reproducir los archivos...
-	public void play(){
-		playing = true;
-		try {
-			while (playing) {
-				for (int m = 0; m < nTest; m++) {
-					streams[m].read(buffer);
-					System.out.println(buffer);
-					lines[m].write(buffer, 0, BUFFER_SIZE);
+	private AtomicBoolean playing = new AtomicBoolean();
+
+	// Acá intento reproducir los archivos...
+	public void play() {
+		playing.set(true);
+		new Thread(() -> {
+			try {
+				while (playing.get()) {
+					for (int m = 0; m < nTest; m++) {
+						streams[m].read(buffer);
+						System.out.println(buffer);
+						lines[m].write(buffer, 0, BUFFER_SIZE);
+					}
 				}
+			} catch (Exception e) {
+				System.out.println("Ups, the play...");
+				System.out.println(e.toString());
+				playing.set(false);
+				throw new RuntimeException(e);
 			}
-		} catch (Exception e) {
-			System.out.println("Ups, the play...");
-			System.out.println(e.toString());
-			playing = false;
-			throw new RuntimeException(e);
-		}
+		}).start();
 	}
 
-	public void stop(){
-		playing = false;
+	public void stop() {
+		playing.set(false);
 	}
 
 }
