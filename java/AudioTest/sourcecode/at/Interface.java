@@ -31,6 +31,7 @@ public class Interface implements ActionListener {
 	JButton config = new JButton();
 
 	JPanel panels[] = new JPanel[4];
+	JComboBox channels = new JComboBox();
 	JComboBox mixers[] = new JComboBox[4];
 	JComboBox lines[] = new JComboBox[4];
 
@@ -47,6 +48,7 @@ public class Interface implements ActionListener {
 	public void actionPerformed (ActionEvent ae) {
 
 		if(ae.getSource() == config) {
+			int c = channels.getSelectedIndex();
 			int m[] = new int[4];
 			int l[] = new int[4];
 			for (int i = 0; i < 4; i++) {
@@ -54,7 +56,7 @@ public class Interface implements ActionListener {
 				l[i] = lines[i].getSelectedIndex();
 			}
 			try {
-				ac.setConfig(m, l);
+				ac.setConfig(c, m, l);
 			} catch (Exception e) {
 				fatalError();
 			}
@@ -97,6 +99,9 @@ public class Interface implements ActionListener {
 		String[] auxm = ac.getMixers();
 		String[] auxch = ac.getLines();
 
+		p.add(Box.createRigidArea(new Dimension (0, 10)));
+		p.add(channelsPanel());
+
 		for (int i = 0; i < panels.length; i++) {
 				p.add(Box.createRigidArea(new Dimension (0, 10)));
 				p.add(linesPanel(i, auxm, auxch));
@@ -106,6 +111,28 @@ public class Interface implements ActionListener {
 		p.add(Box.createRigidArea(new Dimension (0, 10)));
 		p.add(classInfoPanel());
 		p.add(Box.createRigidArea(new Dimension (0, 10)));
+
+		return p;
+
+	}
+
+	JPanel channelsPanel(){
+
+		JPanel p = new JPanel();
+
+		JLabel channelsLabel = new JLabel("<html><div align='left'>Cantidad de canales:</div><html>", JLabel.CENTER);
+		channelsLabel.setFont(frameFont);
+
+		String c[] = {"1","2","3","4"};
+		channels = new JComboBox(c);
+
+		p.setLayout(new BoxLayout(p, BoxLayout.X_AXIS));
+		p.add(Box.createRigidArea(new Dimension (10, 0)));
+		p.add(channelsLabel);
+		p.add(Box.createRigidArea(new Dimension (10, 0)));
+		p.add(channels);
+		p.add(Box.createRigidArea(new Dimension (10, 0)));
+
 
 		return p;
 
