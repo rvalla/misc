@@ -48,7 +48,7 @@ public class Interface implements ActionListener {
 	public void actionPerformed (ActionEvent ae) {
 
 		if(ae.getSource() == config) {
-			int c = channels.getSelectedIndex();
+			int c = channels.getSelectedIndex() + 1;
 			int m[] = new int[4];
 			int l[] = new int[4];
 			for (int i = 0; i < 4; i++) {

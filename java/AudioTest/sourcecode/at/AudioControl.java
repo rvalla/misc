@@ -76,8 +76,8 @@ public class AudioControl {
 	//Acá se supone que se abren y configuran la líneas...
 	public void setConfig(int channels, int tMixer[], int tLines[]){
 		Mixer mixers[] = new Mixer[channels];
+		nTest = channels;
 		for (int i = 0; i < channels; i++) {
-
 			try {
 				mixers[i] = AudioSystem.getMixer(mixerInfo[mixerLocations.get(tMixer[i])]);
 				Line.Info lInfo = mixers[i].getSourceLineInfo()[tLines[i]];
@@ -86,10 +86,10 @@ public class AudioControl {
 				lines[i].start();
 				System.out.println("-- Línea configurada...");
 			} catch (LineUnavailableException lue) {
-				System.out.println("Ups, the line...");
+				System.out.println("-- Ups, the line...");
 				throw new RuntimeException(lue);
 			} catch (Exception e) {
-				System.out.println("Ups, unknown...");
+				System.out.println("-- Ups, unknown...");
 				throw new RuntimeException(e);
 			}
 		}
