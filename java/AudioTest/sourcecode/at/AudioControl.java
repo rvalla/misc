@@ -107,7 +107,6 @@ public class AudioControl {
 				while (playing.get()) {
 					for (int m = 0; m < nTest; m++) {
 						streams[m].read(buffer);
-						System.out.println(buffer);
 						lines[m].write(buffer, 0, BUFFER_SIZE);
 					}
 				}
