@@ -9,6 +9,7 @@ class AudioTest {
 		AudioControl audioControl;
 		audioControl = new AudioControl();
 		try {
+			//Se puede correr una prueba de AudioControl por terminal pasando el argumento "terminal"
 			if (args[0].equals("terminal")){
 				int m[] = {0,0,0,0};
 				int l[] = {0,0,0,0};
@@ -16,7 +17,7 @@ class AudioTest {
 				audioControl.play();
 			}
 		} catch (Exception e) {
-			//Esta es la clase que tiene la interfaz, por ahora recibe la clase audioControl por constructor
+			//Creamos las ventana de control...
 			Interface i = new Interface(audioControl);
 		}
 	}

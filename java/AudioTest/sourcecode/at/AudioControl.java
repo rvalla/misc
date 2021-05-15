@@ -18,22 +18,22 @@ import java.util.ArrayList;
 public class AudioControl {
 
 	private static final int BUFFER_SIZE = 2048 * 8;
-	// private final byte[] buffers[] = new byte[4][BUFFER_SIZE];
 	private final byte[] buffer = new byte[BUFFER_SIZE];
 
 	private static Mixer.Info[] mixerInfo = AudioSystem.getMixerInfo();
-	private ArrayList<Integer> mixerLocations = new ArrayList<Integer>(20);
-	private ArrayList<String> mixersNames = new ArrayList<String>(20);
+	private ArrayList<Integer> mixerLocations = new ArrayList<Integer>(20); //Las direcciones de los mixers...
+	private ArrayList<String> mixersNames = new ArrayList<String>(20); //Nombres de los mixers... para la interfaz...
 
-	// private Boolean playing = false;
-	private int nTest = 4; // Este número define cuántos archivos, líneas carga. (1-4)
-	private AudioFormat af;
-	private File files[] = new File[nTest];
+	private AtomicBoolean playing = new AtomicBoolean();
+	private int nTest = 4; // Este número define cuántos archivos, líneas carga (1-4)
+	private AudioFormat af; //Gurdamos el fortamo de audio del último archivo, asumimos que son iguales...
+	private File files[] = new File[nTest]; //Los archivos de audio...
 	private AudioInputStream streams[] = new AudioInputStream[nTest]; // Acá voy a cargar los archivos...
-	private SourceDataLine lines[] = new SourceDataLine[nTest];
+	private SourceDataLine lines[] = new SourceDataLine[nTest]; //Las líneas para reproducir...
 
 	public AudioControl() {
 		System.out.println("-- AudioControl: Some tests to play multichannel audio...");
+		//Primero cargamos los archivos de audio...
 		for (int i = 0; i < nTest; i++) {
 			try {
 				String filename = "audio/ch_" + String.valueOf(i + 1) + ".wav";
@@ -46,6 +46,7 @@ public class AudioControl {
 				throw new RuntimeException(e);
 			}
 		}
+		//Recorremos los mixers en el sistema y nos guardamos las líneas interface SourceDataLine...
 		for (int i = 0; i < mixerInfo.length; i++) {
 			Mixer mixer = AudioSystem.getMixer(mixerInfo[i]);
 			for (Line.Info l : mixer.getSourceLineInfo()) {
@@ -58,6 +59,7 @@ public class AudioControl {
 		}
 	}
 
+	//Devolvemos un arreglo con los nombres de los mixers para la interfaz...
 	public String[] getMixers() {
 		String result[] = new String[mixerLocations.size()];
 		for (int i = 0; i < result.length; i++) {
@@ -66,6 +68,7 @@ public class AudioControl {
 		return result;
 	}
 
+	//Esto devolvería las líneas para la interfaz. Pero todavía no chequeo si hay mixers con más de una línea...
 	public String[] getLines() {
 		String result[] = new String[2];
 		for (int i = 0; i < result.length; i++) {
@@ -74,7 +77,7 @@ public class AudioControl {
 		return result;
 	}
 
-	// Acá se supone que se abren y configuran la líneas...
+	//Acá configuramos e iniciamos las líneas requeridas...
 	public void setConfig(int channels, int tMixer[], int tLines[]) {
 		Mixer mixers[] = new Mixer[channels];
 		nTest = channels;
@@ -96,9 +99,7 @@ public class AudioControl {
 		}
 	}
 
-	private AtomicBoolean playing = new AtomicBoolean();
-
-	// Acá intento reproducir los archivos...
+	//Acá reproducimos los archivos...
 	public void play() {
 		playing.set(true);
 		new Thread(() -> {

@@ -12,7 +12,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JLabel;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Insets;
@@ -21,10 +20,6 @@ import java.net.URL;
 public class Interface implements ActionListener {
 
 	AudioControl ac;
-
-	Color black = new Color(35, 35, 35);
-	Color red = new Color(190, 40, 40);
-	Color green = new Color(0, 255, 95);
 
 	JButton play = new JButton();
 	JButton stop = new JButton();
@@ -38,18 +33,18 @@ public class Interface implements ActionListener {
 	Font frameFont;
 	Font buttonsFont;
 
+	//Recibimos una objeto de tipo AudioControl por constructor...
 	public Interface (AudioControl audioControl){
 		ac = audioControl;
 		buildFrame();
 	}
 
-	/////////
-	//Actions
+	//Definimos qué hacen los botones...
 	public void actionPerformed (ActionEvent ae) {
 
 		if(ae.getSource() == config) {
 			int c = channels.getSelectedIndex() + 1;
-			int m[] = new int[4];
+			int m[] = new int[4]; //Acá carcamos los valores de las JComboBox
 			int l[] = new int[4];
 			for (int i = 0; i < 4; i++) {
 				m[i] = mixers[i].getSelectedIndex();
@@ -57,6 +52,7 @@ public class Interface implements ActionListener {
 			}
 			try {
 				ac.setConfig(c, m, l);
+				successfulSet();
 			} catch (Exception e) {
 				fatalError();
 			}
@@ -69,11 +65,9 @@ public class Interface implements ActionListener {
 		} else if (ae.getSource() == stop) {
 			ac.stop();
 		}
-
 	}
 
-	////////////////////////////
-	//Let's build the windown...
+	//Construimos la ventana...
 	void buildFrame() {
 
 		JFrame v = new JFrame("Nuestra ventana");
@@ -207,13 +201,19 @@ public class Interface implements ActionListener {
 
 	}
 
-	/////////////////
-	// Error handling
+	//Errores y otros mensajes...
 	void fatalError(){
 		JOptionPane.showMessageDialog(new JFrame(),
    				"Hubo un problemita...",
   				"Ups",
-			JOptionPane.WARNING_MESSAGE);
+			JOptionPane.ERROR_MESSAGE);
+	}
+
+	void successfulSet(){
+		JOptionPane.showMessageDialog(new JFrame(),
+   				"¡Esto es un éxito!",
+  				"Ya estoy listo...",
+			JOptionPane.INFORMATION_MESSAGE);
 	}
 
 }
