@@ -26,7 +26,7 @@ public class AudioControl {
 
 	private AtomicBoolean playing = new AtomicBoolean();
 	private int nTest = 4; // Este número define cuántos archivos, líneas carga (1-4)
-	private AudioFormat af; //Gurdamos el fortamo de audio del último archivo, asumimos que son iguales...
+	private AudioFormat af = new AudioFormat(44100.0f, 16, 1, true, false);
 	private File files[] = new File[nTest]; //Los archivos de audio...
 	private AudioInputStream streams[] = new AudioInputStream[nTest]; // Acá voy a cargar los archivos...
 	private SourceDataLine lines[] = new SourceDataLine[nTest]; //Las líneas para reproducir...
@@ -40,7 +40,6 @@ public class AudioControl {
 				URL aux = getClass().getResource(filename);
 				files[i] = new File(aux.toURI());
 				streams[i] = AudioSystem.getAudioInputStream(files[i]);
-				af = streams[i].getFormat();
 				System.out.println("-- Seems ok...");
 			} catch (Exception e) {
 				throw new RuntimeException(e);
@@ -70,7 +69,7 @@ public class AudioControl {
 
 	//Esto devolvería las líneas para la interfaz. Pero todavía no chequeo si hay mixers con más de una línea...
 	public String[] getLines() {
-		String result[] = new String[2];
+		String result[] = new String[4];
 		for (int i = 0; i < result.length; i++) {
 			result[i] = String.valueOf(i + 1);
 		}
