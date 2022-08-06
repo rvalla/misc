@@ -1,0 +1,144 @@
+[{
+	"label": "ascendente",
+	"category": 0,
+	"level": 2,
+	"text": "tiene la Luna en Sagitario"
+},
+{
+	"label": "ascendente",
+	"category": 0,
+	"level": 2,
+	"text": "tiene la Luna en Júpiter"
+},
+{
+	"label": "ascendente",
+	"category": 0,
+	"level": 1,
+	"text": "está de viaje en la Luna"
+},
+{
+	"label": "ascendente",
+	"category": 0,
+	"level": 1,
+	"text": "no tiene idea de cuándo nació"
+},
+{
+	"label": "ascendente",
+	"category": 0,
+	"level": 0,
+	"text": "no nació nunca"
+},
+{
+	"label": "ascendente",
+	"category": 0,
+	"level": 0,
+	"text": "se olvidó de nacer"
+},
+{
+	"label": "futuro",
+	"category": 1,
+	"level": 2,
+	"text": "por eso tiene un futuro fantástico"
+},
+{
+	"label": "futuro",
+	"category": 1,
+	"level": 2,
+	"text": "por eso va a tener una vida de película"
+},
+{
+	"label": "futuro",
+	"category": 1,
+	"level": 1,
+	"text": "por se le va a complicar la vida"
+},
+{
+	"label": "futuro",
+	"category": 1,
+	"level": 1,
+	"text": "por eso la va a pasar bastante mal"
+},
+{
+	"label": "futuro",
+	"category": 1,
+	"level": 0,
+	"text": "por eso el suicidio siempre es una opción"
+},
+{
+	"label": "futuro",
+	"category": 1,
+	"level": 0,
+	"text": "por eso mejor no acercarse"
+},
+{
+	"label": "mision",
+	"category": 2,
+	"level": 2,
+	"text": "buscará cambiar el mundo con su trabajo"
+},
+{
+	"label": "mision",
+	"category": 2,
+	"level": 2,
+	"text": "se propondrá cambiar el destino de muchos"
+},
+{
+	"label": "mision",
+	"category": 2,
+	"level": 1,
+	"text": "se propondrá hacer un poco de pan y vivir con lo justo"
+},
+{
+	"label": "mision",
+	"category": 2,
+	"level": 1,
+	"text": "pretenderá laburar lo menos posible"
+},
+{
+	"label": "mision",
+	"category": 2,
+	"level": 0,
+	"text": "no perseguirá ninguna misión"
+},
+{
+	"label": "mision",
+	"category": 2,
+	"level": 2,
+	"text": "Dará lo mismo que esté o no esté"
+},
+{
+	"label": "condición",
+	"category": 3,
+	"level": 2,
+	"text": "no tendrá que esforzarse para lograrlo"
+},
+{
+	"label": "condición",
+	"category": 3,
+	"level": 2,
+	"text": "le será muy fácil hacerlo"
+},
+{
+	"label": "condición",
+	"category": 3,
+	"level": 1,
+	"text": "le costará un poco lograrlo"
+},
+{
+	"label": "condición",
+	"category": 3,
+	"level": 1,
+	"text": "sufrirá para conseguirlo"
+},
+{
+	"label": "condición",
+	"category": 3,
+	"level": 0,
+	"text": "fracasará sin importar cuánto lo intente"
+},
+{
+	"label": "condición",
+	"category": 3,
+	"level": 0,
+	"text": "morirá antes de lograrlo"
+}]
