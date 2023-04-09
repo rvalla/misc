@@ -1,0 +1,9 @@
+{
+    "about": "test",
+    "number": 5,
+    "string": "Hello",
+    "boolean": false,
+    "width": 128,
+    "height": 128,
+    "iterations": 5 
+}

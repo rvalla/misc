@@ -2,3 +2,6 @@
 __pycache__
 lichess.json
 elsol*
+rust/*/target/debug/
+Cargo.lock
+.rustc_info.json
