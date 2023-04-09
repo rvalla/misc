@@ -19,16 +19,14 @@ fn main() {
     println!("We are testing if we can create an image...");
     println!("We are ready to start...");
 
-    for i in 1..iterations {
+    for i in 0..iterations {
         let start = Instant::now();
 
-        let w: u32 = width * (2_u32.pow(i+1));
-        let h: u32 = height * (2_u32.pow(i+1));
+        let w: u32 = width * (2_u32.pow(i));
+        let h: u32 = height * (2_u32.pow(i));
         println!("Creating an image of {} x {} pixels...", &w, &h);
         create_image(w, h);
-
-        println!("What a success!");
-        println!("This took me {} seconds.", format_time(start.elapsed().as_millis()));
+        println!("This took me {}.", format_time(start.elapsed().as_millis()));
     }
 }
 
