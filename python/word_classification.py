@@ -1,15 +1,15 @@
 files = ["borges_biblioteca.txt", "borges_funes.txt", "borges_jardin.txt", "borges_ruinas.txt",
         "cortazar_casa.txt", "cortazar_escalera.txt", "cortazar_reloj.txt"]
 
-word_sets = [set() for i in range(15)]
+word_sets = [set() for i in range(16)]
 
 for i in range(len(files)):
     lines = open("data/" + files[i]).readlines()
     for l in lines:
         cleaned = l.replace("\n", "")
         for word in cleaned.split(" "):
-            position = len(word) - 2
-            if position >= 0 and position < 15:
+            position = len(word) - 1
+            if position >= 0 and position < 16:
                 word_sets[position].add(word.lower())
     
     output = open("output/words_" + files[i], "w")
