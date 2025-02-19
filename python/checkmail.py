@@ -1,5 +1,4 @@
 #Testing ways to check valid email addresses
-
 import time as tm
 
 def testPeriod(domain):

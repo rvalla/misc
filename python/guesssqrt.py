@@ -1,5 +1,4 @@
 #Guessing square roots...
-
 import random
 
 def randomNumber():
