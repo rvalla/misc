@@ -6,3 +6,4 @@ rust/*/target/debug/
 Cargo.lock
 .rustc_info.json
 *.out
+testing
