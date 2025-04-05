@@ -1,0 +1,189 @@
+id;about;category;type
+1;Reservas Internacionales del BCRA (en millones de dólares - cifras provisorias sujetas a cambio de valuación);Principales Variables;<class 'float'>
+4;Tipo de Cambio Minorista ($ por USD) Comunicación B 9791 - Promedio vendedor;Principales Variables;<class 'float'>
+5;Tipo de Cambio Mayorista ($ por USD) Comunicación A 3500 - Referencia;Principales Variables;<class 'float'>
+6;Tasa de Política Monetaria (en % n.a.);Principales Variables;<class 'float'>
+7;BADLAR en pesos de bancos privados (en % n.a.);Principales Variables;<class 'float'>
+8;TM20 en pesos de bancos privados (en % n.a.);Principales Variables;<class 'float'>
+9;Tasas de interés de las operaciones de pase activas para el BCRA  a 1 día de plazo (en % n.a.);Principales Variables;<class 'float'>
+10;Tasas de interés de las operaciones de pase pasivas para el BCRA  a 1 día de plazo (en % n.a.);Principales Variables;<class 'float'>
+11;Tasas de interés por préstamos entre entidades financiera privadas (BAIBAR) (en % n.a.);Principales Variables;<class 'float'>
+12;Tasas de interés por depósitos a 30 días de plazo en entidades financieras (en % n.a.);Principales Variables;<class 'float'>
+13;Tasa de interés de préstamos por adelantos en cuenta corriente;Principales Variables;<class 'float'>
+14;Tasa de interés de préstamos personales;Principales Variables;<class 'float'>
+15;Base monetaria - Total (en millones de pesos);Principales Variables;<class 'float'>
+16;Circulación monetaria (en millones de pesos);Principales Variables;<class 'float'>
+17;Billetes y monedas en poder del público (en millones de pesos);Principales Variables;<class 'float'>
+18;Efectivo en entidades financieras (en millones de pesos);Principales Variables;<class 'float'>
+19;Depósitos de los bancos en cta. cte. en pesos en el BCRA (en millones de pesos);Principales Variables;<class 'float'>
+21;Depósitos en efectivo en las entidades financieras - Total (en millones de pesos);Principales Variables;<class 'float'>
+22;En cuentas corrientes (neto de utilización FUCO) (en millones de pesos);Principales Variables;<class 'float'>
+23;En Caja de ahorros (en millones de pesos);Principales Variables;<class 'float'>
+24;A plazo (incluye inversiones y excluye CEDROS) (en millones de pesos);Principales Variables;<class 'float'>
+25;M2 privado  promedio móvil de 30 días  variación interanual (en %);Principales Variables;<class 'float'>
+26;Préstamos de las entidades financieras al sector privado (en millones de pesos);Principales Variables;<class 'float'>
+27;Inflación mensual (variación en %);Principales Variables;<class 'float'>
+28;Inflación interanual (variación en % i.a.);Principales Variables;<class 'float'>
+29;Inflación esperada - REM próximos 12 meses - MEDIANA (variación en % i.a);Principales Variables;<class 'float'>
+30;CER (Base 2.2.2002=1);Principales Variables;<class 'float'>
+31;Unidad de Valor Adquisitivo (UVA) (en pesos -con dos decimales-  base 31.3.2016=14.05);Principales Variables;<class 'float'>
+32;Unidad de Vivienda (UVI) (en pesos -con dos decimales-  base 31.3.2016=14.05);Principales Variables;<class 'float'>
+34;Tasa de Política Monetaria (en % e.a.);Principales Variables;<class 'float'>
+35;BADLAR en pesos de bancos privados (en % e.a.);Principales Variables;<class 'float'>
+40;Índice para Contratos de Locación (ICL-Ley 27.551  con dos decimales  base 30.6.20=1);Principales Variables;<class 'float'>
+41;Tasas de interés de las operaciones de pase pasivas para el BCRA  a 1 día de plazo (en % e.a.);Principales Variables;<class 'float'>
+42;Pases pasivos para el BCRA - Saldos (en millones de pesos);Principales Variables;<class 'float'>
+43;Tasa de interés para uso de la Justicia – Comunicado P 14290 | Base 01/04/1991 (en %);Principales Variables;<class 'float'>
+44;TAMAR en pesos de bancos privados (en % n.a.);Principales Variables;<class 'float'>
+45;TAMAR en pesos de bancos privados (en % e.a.);Principales Variables;<class 'float'>
+46;Total de factores de explicación de la variación de la Base Monetaria (en millones de $);Series.xlsm;<class 'float'>
+47;Efecto monetario de las compras netas de divisas al sector privado y otros (en millones de $);Series.xlsm;<class 'float'>
+48;Efecto monetario de las compras netas de divisas al Tesoro Nacional (en millones de $);Series.xlsm;<class 'float'>
+49;Efecto monetario de los adelantos transitorios al Tesoro Nacional (en millones de $);Series.xlsm;<class 'float'>
+50;Efecto monetario de las transferencia de utilidades al Tesoro Nacional (en millones de $);Series.xlsm;<class 'float'>
+51;Efecto monetario del resto de operaciones con el Tesoro Nacional  (en millones de $);Series.xlsm;<class 'float'>
+52;Efecto monetario de las operaciones de pases (en millones de $);Series.xlsm;<class 'float'>
+53;Efecto monetario de las LELIQ y NOTALIQ (en millones de $);Series.xlsm;<class 'float'>
+54;Efecto monetario de los redescuentos y adelantos (en millones de $);Series.xlsm;<class 'float'>
+55;Efecto monetario de los intereses  primas y remuneración de cuentas corrientes asociados a op. de pases  LELIQ  NOTALIQ  redescuentos y adel. (en millones de $);Series.xlsm;<class 'float'>
+56;Efecto monetario de las LEBAC y NOBAC (en millones de $);Series.xlsm;<class 'float'>
+57;Efecto monetario del rescate de cuasimonedas (en millones de $);Series.xlsm;<class 'float'>
+58;Efecto monetario de las operaciones con Letras Fiscales de Liquidez (en millones de $);Series.xlsm;<class 'float'>
+59;Otras operaciones que explican la variación de la base monetaria (en millones de $);Series.xlsm;<class 'float'>
+60;Variación diaria de billetes y monedas en poder del público (en millones de $);Series.xlsm;<class 'float'>
+61;Variación diaria de billetes y monedas en entidades financieras (en millones de $);Series.xlsm;<class 'float'>
+62;Variación diaria de cheques cancelatorios (en millones de $);Series.xlsm;<class 'float'>
+63;Variación diaria de cuentas corrientes en pesos en el BCRA  (en millones de $);Series.xlsm;<class 'float'>
+64;Variación diaria de la base monetaria (en millones de $);Series.xlsm;<class 'float'>
+65;Variación diaria de cuasimonedas (en millones de $);Series.xlsm;<class 'float'>
+66;Variación diaria de la base monetaria más variación diaria de cuasimonedas (en millones de $);Series.xlsm;<class 'float'>
+67;Saldo de billetes y monedas en poder del público (en millones de $);Series.xlsm;<class 'float'>
+68;Saldo de billetes y monedas en entidades financieras (en millones de $);Series.xlsm;<class 'float'>
+69;Saldo de cheques cancelatorios (en millones de $);Series.xlsm;<class 'float'>
+70;Saldo de cuentas corrientes en pesos en el BCRA (en millones de $);Series.xlsm;<class 'float'>
+71;Saldo de base monetaria (en millones de $);Series.xlsm;<class 'float'>
+72;Saldo de cuasimonedas (en millones de $);Series.xlsm;<class 'float'>
+73;Saldo de base monetaria más cuasimonedas (en millones de $);Series.xlsm;<class 'float'>
+74;Saldo de reservas internacionales (excluidas asignaciones DEG 2009  en millones de USD);Series.xlsm;<class 'float'>
+75;Saldo de oro  divisas  colocaciones a plazo y otros activos de reserva (en millones de USD);Series.xlsm;<class 'float'>
+76;Saldo de divisas-pase pasivo en dólares con el exterior concertados en 2016 (en millones de USD);Series.xlsm;<class 'float'>
+77;Total de variación diaria de las reservas internacionales (en millones de USD);Series.xlsm;<class 'float'>
+78;Variación diaria de reservas internacionales por compra de divisas (en millones de USD);Series.xlsm;<class 'float'>
+79;Variación diaria de reservas internacionales por operaciones con organismos internacionales (en millones de USD);Series.xlsm;<class 'float'>
+80;Variación diaria de reservas internacionales por otras operaciones del sector público (en millones de USD);Series.xlsm;<class 'float'>
+81;Variación diaria de reservas internacionales por efectivo mínimo (en millones de USD);Series.xlsm;<class 'float'>
+82;Variación diaria de reservas internacionales por otras operaciones no incluidas en otros rubros (en millones de USD);Series.xlsm;<class 'float'>
+83;Saldo de Asignaciones de DEGs del año 2009 (en millones de USD);Series.xlsm;<class 'float'>
+84;Tipo de cambio peso / dólar estadounidense de valuación contable;Series.xlsm;<class 'float'>
+85;Saldo de depósitos en pesos en cuentas corrientes de los sectores público y privado no financieros (en millones de $);Series.xlsm;<class 'float'>
+86;Saldo de depósitos en pesos en cajas de ahorro de los sectores público y privado no financieros (en millones de $);Series.xlsm;<class 'float'>
+87;Saldo de depósitos en pesos a plazo no ajustables por CER/UVAs de los sectores público y privado no financieros (en millones de $);Series.xlsm;<class 'float'>
+88;Saldo de depósitos en pesos a plazo ajustables por CER/UVAs de los sectores público y privado no financieros (en millones de $);Series.xlsm;<class 'float'>
+89;Saldo de otros depósitos en pesos de los sectores público y privado no financieros (en millones de $);Series.xlsm;<class 'float'>
+90;Saldo de CEDROS con CER de los sectores público y privado no financieros (en millones de $);Series.xlsm;<class 'float'>
+91;Saldo de los depósitos en pesos de los sectores público y privados no financieros más CEDROS (en millones de $);Series.xlsm;<class 'float'>
+92;Saldo de BODEN de los sectores público y privado no financieros (en millones de $);Series.xlsm;<class 'float'>
+93;Saldo de los depósitos en pesos de los sectores público y privados no financieros más CEDRO más BODEN (en millones de $);Series.xlsm;<class 'float'>
+94;Saldo de depósitos en pesos cuentas corrientes del sector privado no financiero (en millones de $);Series.xlsm;<class 'float'>
+95;Saldo de depósitos en pesos en cajas de ahorro del sector privado no financiero (en millones de $);Series.xlsm;<class 'float'>
+96;Saldo de depósitos en pesos a plazo no ajustables por CER/UVAs del sector privado no financiero (en millones de $);Series.xlsm;<class 'float'>
+97;Saldo de depósitos en pesos a plazo ajustables por CER/UVAs del sector privado no financiero (en millones de $);Series.xlsm;<class 'float'>
+98;Saldo de otros depósitos en pesos del sector privado no financiero (en millones de $);Series.xlsm;<class 'float'>
+99;Saldo de CEDROS con CER del sector privado no financiero (en millones de $);Series.xlsm;<class 'float'>
+100;Saldo de los depósitos en pesos del sector privado no financiero más CEDROS (en millones de $);Series.xlsm;<class 'float'>
+101;Saldo de BODEN del sector privado no financiero (en millones de $);Series.xlsm;<class 'float'>
+102;Saldo de los depósitos en pesos del sector privado no financiero más CEDRO más BODEN (en millones de $);Series.xlsm;<class 'float'>
+103;Saldo de depósitos en dólares de los sectores público y privado no financieros  expresados en pesos (en millones de $);Series.xlsm;<class 'float'>
+104;Saldo de depósitos en dólares del sector privado no financiero  expresados en pesos (en millones de $);Series.xlsm;<class 'float'>
+105;Saldo de depósitos en pesos y en dólares de los sectores público y privado no financieros  expresados en pesos (en millones de $);Series.xlsm;<class 'float'>
+106;Saldo de depósitos en pesos y dólares del sector privado no financiero  expresados en pesos (en millones de $);Series.xlsm;<class 'float'>
+107;Saldo de depósitos en dólares de los sectores público y privado no financieros  expresados en dólares (en millones de USD);Series.xlsm;<class 'float'>
+108;Saldo de depósitos en dólares del sector privado no financiero  expresados en dólares (en millones de USD);Series.xlsm;<class 'float'>
+109;Saldo del agregado monetario M2 (billetes y monedas en poder del público y depósitos en cuenta corriente y en caja de ahorro en pesos correspondientes al sector privado y al sector público  en millones de $);Series.xlsm;<class 'float'>
+110;Saldo de préstamos otorgados al sector privado mediante adelantos en cuenta corriente en pesos (en millones de $);Series.xlsm;<class 'float'>
+111;Saldo de préstamos otorgados al sector privado mediante documentos en pesos (en millones de $);Series.xlsm;<class 'float'>
+112;Saldo de préstamos hipotecarios en pesos otorgados al sector privado (en millones de $);Series.xlsm;<class 'float'>
+113;Saldo de préstamos prendarios en pesos otorgados al sector privado (en millones de $);Series.xlsm;<class 'float'>
+114;Saldo de préstamos personales en pesos (en millones de $);Series.xlsm;<class 'float'>
+115;Saldo de préstamos en pesos mediante tarjetas de crédito otorgados al sector privado (en millones de $);Series.xlsm;<class 'float'>
+116;Saldo de otros préstamos en pesos otorgados al sector privado (en millones de $);Series.xlsm;<class 'float'>
+117;Saldo total de préstamos al sector privado en pesos (en millones de $);Series.xlsm;<class 'float'>
+118;Saldo de préstamos otorgados al sector privado mediante adelantos en cuenta corriente en dólares (en millones de USD);Series.xlsm;<class 'float'>
+119;Saldo de préstamos otorgados al sector privado mediante documentos en dólares (en millones de USD);Series.xlsm;<class 'float'>
+120;Saldo de préstamos hipotecarios en dólares otorgados al sector privado (en millones de USD);Series.xlsm;<class 'float'>
+121;Saldo de préstamos prendarios en dólares otorgados al sector privado (en millones de USD);Series.xlsm;<class 'float'>
+122;Saldo de préstamos personales en dólares (en millones de USD);Series.xlsm;<class 'float'>
+123;Saldo de préstamos en dólares mediante tarjetas de crédito otorgados al sector privado(en millones de USD);Series.xlsm;<class 'float'>
+124;Saldo de otros préstamos en dólares otorgados al sector privado (en millones de USD);Series.xlsm;<class 'float'>
+125;Saldo total de préstamos otorgados al sector privado en dólares (en millones de USD);Series.xlsm;<class 'float'>
+126;Saldo total de préstamos otorgados al sector privado en dólares  expresado en pesos (en millones de $);Series.xlsm;<class 'float'>
+127;Saldo total de préstamos otorgados del sector privado en pesos y moneda extranjera  expresado en pesos (en millones de $);Series.xlsm;<class 'float'>
+128;Tasa de interés de depósitos a plazo fijo en pesos  de 30-44 días   total de operaciones TNA (en %);Series.xlsm;<class 'float'>
+129;Tasa de interés de depósitos a plazo fijo en pesos  de 30-44 días  hasta $100.000  TNA (en %);Series.xlsm;<class 'float'>
+130;Tasa de interés de depósitos a plazo fijo en pesos  de 30-44 días  hasta $100.000  TEA (en %);Series.xlsm;<class 'float'>
+131;Tasa de interés de depósitos a plazo fijo en pesos  de 30-44 días  de más de $1.000.000  TNA (en %);Series.xlsm;<class 'float'>
+132;Tasa de interés de depósitos a plazo fijo en dólares  de 30-44 días  total de operaciones  TNA (en %);Series.xlsm;<class 'float'>
+133;Tasa de interés de depósitos a plazo fijo en dólares  de 30-44 días  hasta $100.000  TNA (en %);Series.xlsm;<class 'float'>
+134;Tasa de interés de depósitos a plazo fijo en dólares  de 30-44 días  de mas de USD1.000.000  TNA (en %);Series.xlsm;<class 'float'>
+135;TAMAR total bancos  TNA (en %);Series.xlsm;<class 'float'>
+136;TAMAR de bancos privados TNA (en %);Series.xlsm;<class 'float'>
+137;TAMAR de bancos privados TEA (en %);Series.xlsm;<class 'float'>
+138;BADLAR total bancos  TNA (en %);Series.xlsm;<class 'float'>
+139;BADLAR de bancos privados TNA (en %);Series.xlsm;<class 'float'>
+140;BADLAR de bancos privados TEA (en %);Series.xlsm;<class 'float'>
+141;TM20 total bancos  TNA (en %);Series.xlsm;<class 'float'>
+142;TM20 de bancos privados  TNA (en %);Series.xlsm;<class 'float'>
+143;TM20 de bancos privados  TEA (en %);Series.xlsm;<class 'float'>
+144;Tasa de interés de préstamos personales en pesos  TNA (en %);Series.xlsm;<class 'float'>
+145;Tasa de interés por adelantos en cuenta corriente en pesos  con acuerdo de 1 a 7 días y de 10 millones o más  a empresas del sector privado  TNA (en %);Series.xlsm;<class 'float'>
+146;Tasa de interés por operaciones de préstamos entre entidades financieras locales privadas (BAIBAR  TNA  en %);Series.xlsm;<class 'float'>
+147;Monto de operaciones de préstamos entre entidades financieras locales privados (BAIBAR  en millones de $);Series.xlsm;<class 'float'>
+148;Tasa de interes por operaciones de préstamos entre entidades financieras locales  TNA (en %);Series.xlsm;<class 'float'>
+149;Monto de operaciones de préstamos entre entidades financieras locales (en millones de $);Series.xlsm;<class 'float'>
+150;Tasa de interes por operaciones de pases entre terceros a 1 día  TNA (en %);Series.xlsm;<class 'float'>
+151;Monto de operaciones de pases entre terceros (en millones de $);Series.xlsm;<class 'float'>
+152;Saldo total de pases pasivos para el BCRA (incluye pases pasivos con FCI  en millones de $);Series.xlsm;<class 'float'>
+153;Saldo de pases pasivos del BCRA con fondos comunes de inversión (en millones de $);Series.xlsm;<class 'float'>
+154;Saldo de pases activos para el BCRA (en millones de $);Series.xlsm;<class 'float'>
+155;Saldo de LELIQ y NOTALIQ (en millones de $);Series.xlsm;<class 'float'>
+156;Saldo de LEBAC y NOBAC en Pesos  LEGAR y LEMIN  (en millones de $);Series.xlsm;<class 'float'>
+157;Saldo de LEBAC y NOBAC en Pesos de Entidades Financieras (en millones de $);Series.xlsm;<class 'float'>
+158;Saldo de LEBAC en dólares  LEDIV y BOPREAL  (en millones de USD);Series.xlsm;<class 'float'>
+159;Saldo de NOCOM (en millones de $);Series.xlsm;<class 'float'>
+160;Tasas de interés de política monetaria  TNA (en %);Series.xlsm;<class 'float'>
+161;Tasas de interés de política monetaria  TEA (en %);Series.xlsm;<class 'float'>
+162;Tasas de interés del BCRA para pases pasivos en pesos a 1 día  TNA (en %);Series.xlsm;<class 'float'>
+163;Tasas de interés del BCRA para pases pasivos en pesos a 7 días  TNA (en %);Series.xlsm;<class 'float'>
+164;Tasas de interés del BCRA para pases activos en pesos a 1 días  TNA (en %);Series.xlsm;<class 'float'>
+165;Tasas de interés del BCRA para pases activos en pesos a 7 días  TNA (en %);Series.xlsm;<class 'float'>
+166;Tasas de interés de LEBAC en Pesos / LELIQ de 1 mes  TNA (en %);Series.xlsm;<class 'float'>
+167;Tasas de interés de LEBAC en Pesos de 2 meses  TNA (en %);Series.xlsm;<class 'float'>
+168;Tasas de interés de LEBAC en Pesos de 3 meses  TNA (en %);Series.xlsm;<class 'float'>
+169;Tasas de interés de LEBAC en Pesos de 4 meses  TNA (en %);Series.xlsm;<class 'float'>
+170;Tasas de interés de LEBAC en Pesos de 5 meses  TNA (en %);Series.xlsm;<class 'float'>
+171;Tasas de interés de LEBAC en Pesos / LELIQ a 6 meses  TNA (en %);Series.xlsm;<class 'float'>
+172;Tasas de interés de LEBAC en Pesos de 7 meses  TNA (en %);Series.xlsm;<class 'float'>
+173;Tasas de interés de LEBAC en Pesos de 8 meses  TNA (en %);Series.xlsm;<class 'float'>
+174;Tasas de interés de LEBAC en Pesos de 9 meses  TNA (en %);Series.xlsm;<class 'float'>
+175;Tasas de interés de LEBAC en Pesos de 10 meses  TNA (en %);Series.xlsm;<class 'float'>
+176;Tasas de interés de LEBAC en Pesos de 11 meses  TNA (en %);Series.xlsm;<class 'float'>
+177;Tasas de interés de LEBAC en Pesos de 12 meses  TNA (en %);Series.xlsm;<class 'float'>
+178;Tasas de interés de LEBAC en Pesos de 18 meses  TNA (en %);Series.xlsm;<class 'float'>
+179;Tasas de interés de LEBAC en Pesos de 24 meses  TNA (en %);Series.xlsm;<class 'float'>
+180;Tasas de interés de LEBAC en pesos ajustables por CER de 6 meses  TNA (en %);Series.xlsm;<class 'float'>
+181;Tasas de interés de LEBAC en pesos ajustables por CER de 12 meses  TNA (en %);Series.xlsm;<class 'float'>
+182;Tasas de interés de LEBAC en pesos ajustables por CER de 18 meses  TNA (en %);Series.xlsm;<class 'float'>
+183;Tasas de interés de LEBAC en pesos ajustables por CER de 24 meses  TNA (en %);Series.xlsm;<class 'float'>
+184;Tasas de interés de LEBAC en dólares  con liquidación en pesos  de 1 mes  TNA (en %);Series.xlsm;<class 'float'>
+185;Tasas de interés de LEBAC en dólares  con liquidación en pesos  de 6 meses  TNA (en %);Series.xlsm;<class 'float'>
+186;Tasas de interés de LEBAC en dólares  con liquidación en pesos  de 12 meses  TNA (en %);Series.xlsm;<class 'float'>
+187;Tasas de interés de LEBAC en dólares  con liquidación en dólares  de 1 mes  TNA (en %);Series.xlsm;<class 'float'>
+188;Tasas de interés de LEBAC en dólares  con liquidación en dólares  de 3 meses  TNA (en %);Series.xlsm;<class 'float'>
+189;Tasas de interés de LEBAC en dólares  con liquidación en dólares  de 6 meses  TNA (en %);Series.xlsm;<class 'float'>
+190;Tasas de interés de LEBAC en dólares  con liquidación en dólares  de 12 meses  TNA (en %);Series.xlsm;<class 'float'>
+191;Margen sobre BADLAR Bancos Privados de NOBAC de 9 meses (en %);Series.xlsm;<class 'float'>
+192;Margen sobre Bancos Privados de NOBAC de 12 meses (en %);Series.xlsm;<class 'float'>
+193;Margen sobre BADLAR Total de NOBAC de 2 Años (en %);Series.xlsm;<class 'float'>
+194;Margen sobre BADLAR Bancos Privados de NOBAC de 2 Años (en %);Series.xlsm;<class 'float'>
+195;Margen sobre Tasa de Politica Monetaria de NOTALIQ en Pesos de 190 dias (en %);Series.xlsm;<class 'float'>
+196;Saldo de Letras Fiscales de Liquidez en cartera de entidades financieras  en valor técnico (en millones de $);Series.xlsm;<class 'float'>

@@ -7,3 +7,4 @@ Cargo.lock
 .rustc_info.json
 *.out
 testing
+testing.py
